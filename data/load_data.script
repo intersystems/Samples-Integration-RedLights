@@ -1,0 +1,6 @@
+_SYSTEM
+PASSWORD
+zn "USER"
+do ##class(%SYSTEM.OBJ).Load("/tmp/irisupdate/EndStateProduction.xml","cdk")
+do ##class(Demo.RedLights).Start()
+halt
