@@ -210,8 +210,8 @@ BPL Definition</Description>
   <ActorPoolSize>2</ActorPoolSize>
   <Item Name="RedLightArchive" Category="" ClassName="EnsLib.RecordMap.Service.FileService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Host" Name="RecordMap">RedLightArchive</Setting>
-    <Setting Target="Adapter" Name="ArchivePath">C:\Users\jhogan\Documents\Documents\Class Docs\Online\Courses\Quickstarts\Interoperability\RedLightApp</Setting>
-    <Setting Target="Adapter" Name="FilePath">C:\Users\jhogan\Documents\Documents\Class Docs\Online\Courses\Quickstarts\Interoperability\RedLightApp</Setting>
+    <Setting Target="Adapter" Name="ArchivePath">/tmp/irisupdate/SampleFiles</Setting>
+    <Setting Target="Adapter" Name="FilePath">/tmp/irisupdate/SampleFiles/In</Setting>
     <Setting Target="Adapter" Name="FileSpec">Red_Light_Camera_Violations.csv</Setting>
     <Setting Target="Host" Name="TargetConfigNames">Demo.RedLightBPL</Setting>
   </Item>
@@ -220,17 +220,18 @@ BPL Definition</Description>
   <Item Name="To_HighRiskOperation" Category="" ClassName="EnsLib.RecordMap.Operation.FileOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Host" Name="Filename">%Q_HighRisk.txt</Setting>
     <Setting Target="Host" Name="RecordMap">RedLightArchive</Setting>
-    <Setting Target="Adapter" Name="FilePath">C:\InterSystems\IRIS201811Rel\Data\Out</Setting>
+    <Setting Target="Adapter" Name="FilePath">/tmp/irisupdate/SampleFiles/Out</Setting>
   </Item>
   <Item Name="To_TicketApplication" Category="" ClassName="EnsLib.RecordMap.Operation.FileOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
-    <Setting Target="Adapter" Name="FilePath">C:\InterSystems\IRIS201811Rel\Data\To_TicketApplication</Setting>
+    <Setting Target="Adapter" Name="FilePath">/tmp/irisupdate/SampleFiles/Out</Setting>
     <Setting Target="Host" Name="Filename">Tickets.txt</Setting>
     <Setting Target="Host" Name="RecordMap">Demo.ToTicketAppRecordMap</Setting>
   </Item>
   <Item Name="To_Archive" Category="" ClassName="Demo.StoreToArchive" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
   </Item>
   <Item Name="RealTimeRedLightViolation" Category="" ClassName="EnsLib.RecordMap.Service.FileService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
-    <Setting Target="Adapter" Name="FilePath">C:\Users\jhogan\Documents\Documents\Class Docs\Online\Courses\Quickstarts\Interoperability\DataIn\RealTimeIn</Setting>
+    <Setting Target="Adapter" Name="ArchivePath">/tmp/irisupdate/SampleFiles</Setting>
+	<Setting Target="Adapter" Name="FilePath">/tmp/irisupdate/SampleFiles/In</Setting>
     <Setting Target="Adapter" Name="FileSpec">LocalRedLight*</Setting>
     <Setting Target="Host" Name="RecordMap">RedLightViolationsRecordMap</Setting>
     <Setting Target="Host" Name="TargetConfigNames">Demo.TicketBPL</Setting>
