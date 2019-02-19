@@ -208,16 +208,16 @@ BPL Definition</Description>
 <Production Name="Demo.RedLights" LogGeneralTraceEvents="true">
   <Description></Description>
   <ActorPoolSize>2</ActorPoolSize>
-  <Item Name="RedLightArchive" Category="" ClassName="EnsLib.RecordMap.Service.FileService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  <Item Name="RedLightArchive" Category="" ClassName="EnsLib.RecordMap.Service.FileService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Host" Name="RecordMap">RedLightArchive</Setting>
     <Setting Target="Adapter" Name="ArchivePath">/tmp/irisupdate/SampleFiles</Setting>
     <Setting Target="Adapter" Name="FilePath">/tmp/irisupdate/SampleFiles/In</Setting>
     <Setting Target="Adapter" Name="FileSpec">Red_Light_Camera_Violations.csv</Setting>
     <Setting Target="Host" Name="TargetConfigNames">Demo.RedLightBPL</Setting>
   </Item>
-  <Item Name="Demo.RedLightBPL" Category="" ClassName="Demo.RedLightBPL" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  <Item Name="Demo.RedLightBPL" Category="" ClassName="Demo.RedLightBPL" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
   </Item>
-  <Item Name="To_HighRiskOperation" Category="" ClassName="EnsLib.RecordMap.Operation.FileOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  <Item Name="To_HighRiskOperation" Category="" ClassName="EnsLib.RecordMap.Operation.FileOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Host" Name="Filename">%Q_HighRisk.txt</Setting>
     <Setting Target="Host" Name="RecordMap">RedLightArchive</Setting>
     <Setting Target="Adapter" Name="FilePath">/tmp/irisupdate/SampleFiles/Out</Setting>
