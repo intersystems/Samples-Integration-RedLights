@@ -16,8 +16,8 @@
 # limitations under the License.
 #
 #
-# load petshop data into InterSystems IRIS container
-echo "Installing petshop data..."
+# load red light data into InterSystems IRIS container
+echo "Installing red light data..."
 # get directory that we are running in to use as base directory
 basedir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 targetdir="/tmp/irisupdate"
