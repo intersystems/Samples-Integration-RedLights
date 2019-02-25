@@ -20,13 +20,22 @@ Data is already preloaded into InterSystems Labs. If you have Azure, GCP, or AWS
 3) Get your connection information
 
 	`iris info`
-		This will show the URL for the Management Portal. Follow System Explorer > SQL to view schemas or execute queries.
+		This will show the URL for the Management Portal. Follow Interoperability > USER namespace > Configure > Production to view the production.
 
-## LOADING DATA: These steps are written for instances running in Google Cloud Platform, Azure, or AWS
+## LOADING DATA: For instances running in GCP, Azure, or AWS
 
 1) Get the sample data and scripts
 	
 	`iris load https://github.com/intersystems/Samples-Integration-RedLights
+
+## LOADING DATA: Using a local instance
+
+1) Clone this repository
+2) Either create a production-enabled namespace or make USER production-enabled using: 
+	`do ##class(%Library.EnsembleMgr).EnableNamespace("USER")
+2) Navigate to System Explorer > Classes and import data/EndStateProduction.xml.
+3) Navigate to Interoperability > Production > Production Configuration and change the File Path for RealTimeRedLightViolation to <repo home>/data/In . Change File Path for To_TicketApplication to <repo home>/data/Out.
+4) Start the production
 
 ---
 ## TAKE A LOOK AT THE DATA
