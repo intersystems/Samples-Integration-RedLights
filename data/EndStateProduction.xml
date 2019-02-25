@@ -22,7 +22,7 @@
     <Setting Target="Adapter" Name="ArchivePath">/tmp/irisupdate/SampleFiles</Setting>
 	<Setting Target="Adapter" Name="FilePath">/tmp/irisupdate/In</Setting>
     <Setting Target="Adapter" Name="FileSpec">LocalRedLight*</Setting>
-    <Setting Target="Host" Name="RecordMap">RedLightViolationsRecordMap</Setting>
+    <Setting Target="Host" Name="RecordMap">Demo.RedLightViolationsRecordMap</Setting>
     <Setting Target="Host" Name="TargetConfigNames">Demo.TicketBPL</Setting>
   </Item>
   <Item Name="Demo.TicketBPL" Category="" ClassName="Demo.TicketBPL" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
@@ -453,7 +453,6 @@ by user SuperUser</Description>
     <ProjectItem name="Demo.ToTicketAppRecordMap" type="CLS"></ProjectItem>
     <ProjectItem name="Demo.ToTicketAppRecordMap.Record" type="CLS"></ProjectItem>
     <ProjectItem name="Demo.WhitelistRule" type="CLS"></ProjectItem>
-    <ProjectItem name="RedLightViolationsRecordMap" type="CLS"></ProjectItem>
     <ProjectItem name="Demo.RedLightViolationsRecordMap" type="CLS"></ProjectItem>
     <ProjectItem name="Demo.RedLightViolationsRecordMap.Record" type="CLS"></ProjectItem>
     <ProjectItem name="EnsExportNotes.EnsExportProduction_2019-01-17 23-25-32_222-5.PTD" type="PTD"></ProjectItem>
