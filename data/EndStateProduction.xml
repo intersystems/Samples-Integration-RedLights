@@ -43,7 +43,7 @@
 </Parameter>
 
 <Method name="StoreToArchive">
-<FormalSpec>pRequest:User.RedLightViolationsRecordMap.Record,*pResponse:Ens.Response</FormalSpec>
+<FormalSpec>pRequest:Demo.RedLightViolationsRecordMap.Record,*pResponse:Ens.Response</FormalSpec>
 <ReturnType>%Status</ReturnType>
 <Implementation><![CDATA[
 
@@ -55,7 +55,7 @@
 <XData name="MessageMap">
 <Data><![CDATA[
 <MapItems>
-	<MapItem MessageType="User.RedLightViolationsRecordMap.Record"> 
+	<MapItem MessageType="Demo.RedLightViolationsRecordMap.Record"> 
 		<Method>StoreToArchive</Method>
 	</MapItem>
 </MapItems>
@@ -76,7 +76,7 @@
 BPL Definition</Description>
 <XMLNamespace>http://www.intersystems.com/bpl</XMLNamespace>
 <Data><![CDATA[
-<process language='objectscript' request='User.RedLightViolationsRecordMap.Record' response='Ens.Response' height='2000' width='2000' >
+<process language='objectscript' request='Demo.RedLightViolationsRecordMap.Record' response='Ens.Response' height='2000' width='2000' >
 <context>
 <property name='Whitelisted' type='%Boolean' instantiate='0' />
 <property name='CarType' type='%String' instantiate='0' >
@@ -107,7 +107,7 @@ BPL Definition</Description>
 </false>
 </if>
 <call name='Store all to repository' target='To_Archive' async='1' xpos='200' ypos='900' >
-<request type='User.RedLightViolationsRecordMap.Record' >
+<request type='Demo.RedLightViolationsRecordMap.Record' >
 <assign property="callrequest" value="request" action="set" />
 </request>
 <response type='Ens.Response' />
@@ -454,15 +454,15 @@ by user SuperUser</Description>
     <ProjectItem name="Demo.ToTicketAppRecordMap.Record" type="CLS"></ProjectItem>
     <ProjectItem name="Demo.WhitelistRule" type="CLS"></ProjectItem>
     <ProjectItem name="RedLightViolationsRecordMap" type="CLS"></ProjectItem>
-    <ProjectItem name="User.RedLightViolationsRecordMap" type="CLS"></ProjectItem>
-    <ProjectItem name="User.RedLightViolationsRecordMap.Record" type="CLS"></ProjectItem>
+    <ProjectItem name="Demo.RedLightViolationsRecordMap" type="CLS"></ProjectItem>
+    <ProjectItem name="Demo.RedLightViolationsRecordMap.Record" type="CLS"></ProjectItem>
     <ProjectItem name="EnsExportNotes.EnsExportProduction_2019-01-17 23-25-32_222-5.PTD" type="PTD"></ProjectItem>
   </Items>
 </Project>
 
-<Class name="User.RedLightViolationsRecordMap">
+<Class name="Demo.RedLightViolationsRecordMap">
 <Description>
-RECORDMAP: Modified during compilation of RecordMap 'User.RedLightViolationsRecordMap'
+RECORDMAP: Modified during compilation of RecordMap 'Demo.RedLightViolationsRecordMap'
 on 2019-01-17 at 17:11:23.460 [2019-01-17 22:11:23.460 UTC]
 by user SuperUser</Description>
 <Super>EnsLib.RecordMap.RecordMap</Super>
@@ -545,7 +545,7 @@ structure of the RecordMap. For testing purposes, a file name may be passed in t
 </Method>
 
 <Parameter name="OBJECTNAME">
-<Default>User.RedLightViolationsRecordMap.Record</Default>
+<Default>Demo.RedLightViolationsRecordMap.Record</Default>
 </Parameter>
 
 <Method name="GetRecord">
@@ -640,7 +640,7 @@ Internal helper method to output object to a stream</Description>
 <ReturnType>%Status</ReturnType>
 <Implementation><![CDATA[
 	Kill pClasses
-	Set pClasses("User.RedLightViolationsRecordMap.Record")=""
+	Set pClasses("Demo.RedLightViolationsRecordMap.Record")=""
 	Set pClasses($classname())=""
 	Quit $$$OK
 ]]></Implementation>
@@ -665,7 +665,7 @@ Internal helper method to output object to a stream</Description>
 <XData name="RecordMap">
 <XMLNamespace>http://www.intersystems.com/Ensemble/RecordMap</XMLNamespace>
 <Data><![CDATA[
-<Record xmlns="http://www.intersystems.com/Ensemble/RecordMap" name="User.RedLightViolationsRecordMap" type="delimited" char_encoding="UTF-8" targetClassname="User.RedLightViolationsRecordMap.Record" recordTerminator="\x0d\x0a">
+<Record xmlns="http://www.intersystems.com/Ensemble/RecordMap" name="Demo.RedLightViolationsRecordMap" type="delimited" char_encoding="UTF-8" targetClassname="Demo.RedLightViolationsRecordMap.Record" recordTerminator="\x0d\x0a">
   <Separators>
     <Separator>,</Separator>
   </Separators>
@@ -685,9 +685,9 @@ Internal helper method to output object to a stream</Description>
 </Class>
 
 
-<Class name="User.RedLightViolationsRecordMap">
+<Class name="Demo.RedLightViolationsRecordMap">
 <Description>
-RECORDMAP: Modified during compilation of RecordMap 'User.RedLightViolationsRecordMap'
+RECORDMAP: Modified during compilation of RecordMap 'Demo.RedLightViolationsRecordMap'
 on 2019-01-17 at 17:11:23.460 [2019-01-17 22:11:23.460 UTC]
 by user SuperUser</Description>
 <Super>EnsLib.RecordMap.RecordMap</Super>
@@ -770,7 +770,7 @@ structure of the RecordMap. For testing purposes, a file name may be passed in t
 </Method>
 
 <Parameter name="OBJECTNAME">
-<Default>User.RedLightViolationsRecordMap.Record</Default>
+<Default>Demo.RedLightViolationsRecordMap.Record</Default>
 </Parameter>
 
 <Method name="GetRecord">
@@ -865,7 +865,7 @@ Internal helper method to output object to a stream</Description>
 <ReturnType>%Status</ReturnType>
 <Implementation><![CDATA[
 	Kill pClasses
-	Set pClasses("User.RedLightViolationsRecordMap.Record")=""
+	Set pClasses("Demo.RedLightViolationsRecordMap.Record")=""
 	Set pClasses($classname())=""
 	Quit $$$OK
 ]]></Implementation>
@@ -890,7 +890,7 @@ Internal helper method to output object to a stream</Description>
 <XData name="RecordMap">
 <XMLNamespace>http://www.intersystems.com/Ensemble/RecordMap</XMLNamespace>
 <Data><![CDATA[
-<Record xmlns="http://www.intersystems.com/Ensemble/RecordMap" name="User.RedLightViolationsRecordMap" type="delimited" char_encoding="UTF-8" targetClassname="User.RedLightViolationsRecordMap.Record" recordTerminator="\x0d\x0a">
+<Record xmlns="http://www.intersystems.com/Ensemble/RecordMap" name="Demo.RedLightViolationsRecordMap" type="delimited" char_encoding="UTF-8" targetClassname="Demo.RedLightViolationsRecordMap.Record" recordTerminator="\x0d\x0a">
   <Separators>
     <Separator>,</Separator>
   </Separators>
@@ -910,9 +910,9 @@ Internal helper method to output object to a stream</Description>
 </Class>
 
 
-<Class name="User.RedLightViolationsRecordMap.Record">
+<Class name="Demo.RedLightViolationsRecordMap.Record">
 <Description>
-RECORDMAP: Generated from RecordMap 'User.RedLightViolationsRecordMap'
+RECORDMAP: Generated from RecordMap 'Demo.RedLightViolationsRecordMap'
 on 2019-01-17 at 17:11:23.448 [2019-01-17 22:11:23.448 UTC]
 by user SuperUser</Description>
 <ProcedureBlock>1</ProcedureBlock>
@@ -951,11 +951,11 @@ by user SuperUser</Description>
 
 <Storage name="Default">
 <Type>%Storage.Persistent</Type>
-<DataLocation>^User.RedLightViolat172C.RecordD</DataLocation>
+<DataLocation>^Demo.RedLightViolat172C.RecordD</DataLocation>
 <DefaultData>RecordDefaultData</DefaultData>
-<IdLocation>^User.RedLightViolat172C.RecordD</IdLocation>
-<IndexLocation>^User.RedLightViolat172C.RecordI</IndexLocation>
-<StreamLocation>^User.RedLightViolat172C.RecordS</StreamLocation>
+<IdLocation>^Demo.RedLightViolat172C.RecordD</IdLocation>
+<IndexLocation>^Demo.RedLightViolat172C.RecordI</IndexLocation>
+<StreamLocation>^Demo.RedLightViolat172C.RecordS</StreamLocation>
 <ExtentSize>2000000</ExtentSize>
 <Data name="RecordDefaultData">
 <Structure>listnode</Structure>
@@ -1011,9 +1011,9 @@ by user SuperUser</Description>
 <Item num="9">Demo.WhitelistRule.CLS</Item>
 <Item num="10">RedLightArchive.CLS</Item>
 <Item num="11">RedLightViolationsRecordMap.CLS</Item>
-<Item num="12">User.RedLightArchive.CLS</Item>
-<Item num="13">User.RedLightViolationsRecordMap.CLS</Item>
-<Item num="14">User.RedLightViolationsRecordMap.Record.CLS</Item>
+<Item num="12">Demo.RedLightArchive.CLS</Item>
+<Item num="13">Demo.RedLightViolationsRecordMap.CLS</Item>
+<Item num="14">Demo.RedLightViolationsRecordMap.Record.CLS</Item>
 </Contents>
 <ProductionClassInExport>Demo.RedLights</ProductionClassInExport>
 </Deployment>
