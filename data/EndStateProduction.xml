@@ -12,15 +12,15 @@
   <Description></Description>
   <ActorPoolSize>2</ActorPoolSize>
   <Item Name="To_TicketApplication" Category="" ClassName="EnsLib.RecordMap.Operation.FileOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
-    <Setting Target="Adapter" Name="FilePath">/tmp/irisupdate/Out</Setting>
+    <Setting Target="Adapter" Name="FilePath">/home/project/Samples-Integration-RedLights/data/Out</Setting>
     <Setting Target="Host" Name="Filename">Tickets.txt</Setting>
     <Setting Target="Host" Name="RecordMap">Demo.ToTicketAppRecordMap</Setting>
   </Item>
   <Item Name="To_Archive" Category="" ClassName="Demo.StoreToArchive" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
   </Item>
   <Item Name="RealTimeRedLightViolation" Category="" ClassName="EnsLib.RecordMap.Service.FileService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
-    <Setting Target="Adapter" Name="ArchivePath">/tmp/irisupdate/SampleFiles</Setting>
-	<Setting Target="Adapter" Name="FilePath">/tmp/irisupdate/In</Setting>
+    <Setting Target="Adapter" Name="ArchivePath">/home/project/Samples-Integration-RedLights/data/SampleFiles</Setting>
+	<Setting Target="Adapter" Name="FilePath">/home/project/Samples-Integration-RedLights/data/In</Setting>
     <Setting Target="Adapter" Name="FileSpec">LocalRedLight*</Setting>
     <Setting Target="Host" Name="RecordMap">Demo.RedLightViolationsRecordMap</Setting>
     <Setting Target="Host" Name="TargetConfigNames">Demo.TicketBPL</Setting>

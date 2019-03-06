@@ -30,13 +30,12 @@ If you have Azure, GCP, or AWS:
 
 ## LOADING DATA: Using InterSystems Learning Labs
 
-1) In the provided IDE, select Terminal > New Terminal
-2) Clone the repo: `git clone https://github.com/intersystems/Samples-Integration-RedLights`
-3) From the Management Portal > Home, select Terminal under Links. Make the USER namespace production-enabled by running: `do ##class(%Library.EnsembleMgr).EnableNamespace("USER")`
-4) Navigate to System Explorer > Classes and import data/EndStateProduction.xml.
-5) Navigate to Interoperability > Production > Production Configuration and open the Demo.RedLights production.
-6) Change the File Path for RealTimeRedLightViolation to <repo home>/data/In and the File Path for To_TicketApplication to <repo home>/data/Out. Don't forget to click Apply to save the changes for each.
-7) Start the production using the Start button at the top.
+1) In the provided IDE, select Terminal > New Terminal. Clone the repo: `git clone https://github.com/intersystems/Samples-Integration-RedLights`
+2) From the Management Portal > Home, select Terminal under Links. Make the USER namespace production-enabled by running: `do ##class(%Library.EnsembleMgr).EnableNamespace("USER")`
+3) Navigate to System Explorer > Classes and import data/EndStateProduction.xml.
+4) Navigate to Interoperability > Production > Production Configuration and open the Demo.RedLights production.
+5) Change the File Path for RealTimeRedLightViolation to <repo home>/data/In, Archive Path to <repo home>/data/SampleFiles/ and the File Path for To_TicketApplication to <repo home>/data/Out. Don't forget to click Apply to save the changes for each.
+6) Start the production using the Start button at the top.
 
 ## LOADING DATA: Using a local instance
 
@@ -45,7 +44,7 @@ If you have Azure, GCP, or AWS:
 	`do ##class(%Library.EnsembleMgr).EnableNamespace("USER")`
 3) Navigate to System Explorer > Classes and import data/EndStateProduction.xml.
 4) Navigate to Interoperability > Production > Production Configuration and open the Demo.RedLights production.
-5) Change the File Path for RealTimeRedLightViolation to <repo home>/data/In and the File Path for To_TicketApplication to <repo home>/data/Out. Don't forget to click Apply to save the changes for each.
+5) Change the File Path for RealTimeRedLightViolation to <repo home>/data/In, Archive Path to <repo home>/data/SampleFiles/ and the File Path for To_TicketApplication to <repo home>/data/Out. Don't forget to click Apply to save the changes for each.
 6) Start the production using the Start button at the top.
 
 ---
