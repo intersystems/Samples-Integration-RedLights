@@ -2,6 +2,6 @@ _SYSTEM
 PASSWORD
 zn "USER"
 do ##class(%Library.EnsembleMgr).EnableNamespace("USER")
-do ##class(%SYSTEM.OBJ).Load("/home/project/Samples-Integration-RedLights/data/EndStateProduction.xml","cdk")
+do ##class(%SYSTEM.OBJ).Load("/tmp/irisupdate/EndStateProduction.xml","cdk")
 do ##class(Demo.RedLights).Start()
 halt
