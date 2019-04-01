@@ -3,5 +3,4 @@ PASSWORD
 zn "USER"
 do ##class(%Library.EnsembleMgr).EnableNamespace("USER")
 do ##class(%SYSTEM.OBJ).Load("/tmp/irisupdate/EndStateProduction.xml","cdk")
-do ##class(Demo.RedLights).Start()
 halt
