@@ -8,16 +8,17 @@ The main goal is to show the benefits of integration within InterSystems IRIS Da
 This sample assumes you already have an instance. If you do not yet have one, you can visit: [Get InterSystems IRIS](https://learning.intersystems.com/course/view.php?name=Get%20InterSystems%20IRIS).
 
 ---
+## LOADING DATA: Using InterSystems Learning Labs and a marketplace Evalution Edition (GCP, Azure, or AWS)
 
-## LOADING DATA: For instances running in GCP, Azure, or AWS Community Edition
+This sample is already pre-loaded in these instances.  
 
-1) Get the sample data and run the setup scripts
+
+## LOADING DATA: For instances running in a marketplace Community Edition (GCP, Azure, or AWS)
+
+1) Get the sample data and run the setup scripts  
 	
 	`iris load https://github.com/intersystems/Samples-Integration-RedLights`
 
-## LOADING DATA: Using InterSystems Learning Labs and GCP, Azure, or AWS Evalution Editions
-
-This sample is already pre-loaded in these instances.
 
 ## LOADING DATA: Using a local instance
 
