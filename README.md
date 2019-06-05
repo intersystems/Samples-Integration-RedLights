@@ -1,7 +1,9 @@
 # Samples-Integration-RedLights
 
-This repository contains sample red light violation data and the scripts to load it into your InterSystems IRIS instance. It is used in the [Interoperability QuickStart](https://learning.intersystems.com/course/view.php?name=Interop%20QS).
-The main goal is to show the benefits of integration within InterSystems IRIS Data Platform such as business orchestration, record mapper, data transformations.
+This example contains a sample integration solution within InterSystems IRIS that show business orchestration and routing, how to easily consume data from files, and data transformations. It consumes data about red light violations from traffic cameras and routes the appropriate data to both an archival system and a ticket application.
+
+For full exercise steps and a video that further explains this feature see the [Interoperability QuickStart](https://learning.intersystems.com/course/view.php?name=Interop%20QS).
+
 
 ## Run the sample
  
