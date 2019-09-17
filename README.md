@@ -2,7 +2,7 @@
 
 This example contains a sample integration solution within InterSystems IRIS that show business orchestration and routing, how to easily consume data from files, and data transformations. It consumes data about red light violations from traffic cameras and routes the appropriate data to both an archival system and a ticket application.
 
-For full exercise steps and a video that further explains this feature see the [Interoperability QuickStart](https://learning.intersystems.com/course/view.php?name=Interop%20QS).
+For full exercise steps and a video that further explains this feature see the [Interoperability QuickStart](https://gettingstarted.intersystems.com/interoperability/quickstart-interop-2/).
 
 
 ## Run the sample
@@ -26,7 +26,7 @@ For full exercise steps and a video that further explains this feature see the [
 
 ## Keep Exploring
 
-* Want to follow the full QuickStart steps? See the [Interoperability QuickStart](https://learning.intersystems.com/course/view.php?name=Interop%20QS). 
+* Want to follow the full QuickStart steps? See the [Interoperability QuickStart](https://gettingstarted.intersystems.com/interoperability/quickstart-interop-2/). 
 * Want to create a new integration solution from scratch? Follow the [Connecting Systems Using Interoperability Productions](https://irisdocs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=AFL_productions) First Look.
 
 
