@@ -1,5 +1,5 @@
 # Samples-Integration-RedLights
-This repository contains sample red light violation data and the scripts to load it into your InterSystems IRIS instance. It is used in the Interoperability QuickStart which can be found on the InterSystems Learning site: https://learning.intersystems.com/course/view.php?name=Interop%20QS
+This repository contains sample red light violation data and the scripts to load it into your InterSystems IRIS instance. It is used in the Interoperability QuickStart: https://gettingstarted.intersystems.com/interoperability/quickstart-interop-2/
 The main goal is to show the benefits of integration within InterSystems IRIS Data Platform such as business orchestration, record mapper, data transformations.
 
 ---
