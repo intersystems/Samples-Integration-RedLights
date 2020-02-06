@@ -1,5 +1,3 @@
 # Samples-Integration-RedLights
 
-One line from Michelle
-
-[Interoperability QuickStart](https://gettingstarted.intersystems.com/interoperability/quickstart-interop-2/)
+See QuickStart instructions at [Interoperability QuickStart](https://gettingstarted.intersystems.com/interoperability/quickstart-interop-2/)
