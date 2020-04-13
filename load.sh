@@ -21,7 +21,7 @@ echo "Installing red light data..."
 # get directory that we are running in to use as base directory
 basedir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 targetdir="/home/project/Samples-Integration-RedLights/data"
-containername="try-iris"
+containername="$(docker ps --format "{{.Names}}")"
 echo "copy from "$basedir"/. to "$containername":"$targetdir"/"
 
 
